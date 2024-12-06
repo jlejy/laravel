@@ -1,0 +1,14 @@
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">{{ message }}</div>
+    <script>
+       const { createApp } = Vue; //뷰 객체의 속성 중 createApp() 함수를 비구조화 할당으로 변수에 할당한다.
+       createApp({ //createApp() 함수를 호출하면 애플리케이션 인스턴스를 생성할 수 있다.
+           data() {
+               return {
+                   message: "Hello, Vue.js!",
+               };
+           },
+       }).mount("#app");
+    </script>
+</body>
