@@ -34,7 +34,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/aa', [abcController::class, 'index']);
 
 Route::get('hello', function() {
-    return response('Hello World'); //helper = 함수입니다.dd
+    return response('Hello World'); //helper = 함수입니다.ㅎㅎㅎ
 });
 
 require __DIR__.'/auth.php';
